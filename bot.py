@@ -4,7 +4,7 @@ import config
 class main(commands.Bot):
     def __init__(self):
         super().__init__(
-            command_prefix=commands.slash_command,
+            command_prefix=commands.when_mentioned,
             intents=config.intents,
             help_command=None,  # type: ignore
             sync_commands_debug=True,
